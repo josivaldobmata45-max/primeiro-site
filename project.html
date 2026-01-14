@@ -1,1 +1,67 @@
-project
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-Estar Comunitário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bem-Estar Comunitário</h1>
+    <p>Combate ao sedentarismo e promoção da saúde mental</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#saude">Saúde Mental</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<main>
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            Projeto acadêmico voltado à melhoria da qualidade de vida da comunidade,
+            incentivando hábitos saudáveis e o cuidado com a saúde mental.
+        </p>
+    </section>
+
+    <section id="atividades">
+        <h2>Atividades Físicas</h2>
+        <ul>
+            <li>Caminhadas orientadas</li>
+            <li>Alongamentos diários</li>
+            <li>Exercícios funcionais</li>
+        </ul>
+        <button onclick="mostrarMensagem()">Participar</button>
+    </section>
+
+    <section id="saude">
+        <h2>Saúde Mental</h2>
+        <p>
+            O cuidado emocional é essencial para o bem-estar.
+            Pequenas ações diárias ajudam a reduzir o estresse e a ansiedade.
+        </p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form onsubmit="return validarFormulario()">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <textarea id="mensagem" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Projeto Acadêmico © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
